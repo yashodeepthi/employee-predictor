@@ -1,0 +1,93 @@
+<link rel="stylesheet" href="../static/style/predict.css">
+<title>Predict employee resignation</title>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <div id="emp-label"></div>
+    <div class="login">
+    	<div class="login-screen">
+    		<div class="app-title">
+    			<h1>Input for Evaluation</h1>
+    		</div>
+    		<div class="login-form">
+                <div id="error-messages" style="color:red;margin:20px;"></div>
+    			<div class="control-group">
+    				<label for="Satisfaction_level">Satisfaction level(between 0 and 100):</label>
+    				<input type="text" required class="login-field" value="" placeholder="Satisfaction_level" name="sl" id ="sl">
+    				<label class="login-field-icon fui-user" for="login-name"></label>
+    			</div>
+
+    			<div class="control-group">
+    				<label for="Last_evaluation">Last evaluation(between 0 and 100):</label>
+    				<input type="text" required class="login-field" value="" placeholder="Last_evaluation" name="le" id = "le"> 
+    				<label class="login-field-icon fui-lock" for="login-pass"></label>
+    			</div>
+
+    			<div class="control-group">
+    				<label for="Number_project">Number of Projects:</label>
+    				<input class="box" type="number" required class="form-control" placeholder="Number of Projects" name="nop" id = "nop" >
+    				<label class="login-field-icon fui-lock" for="login-pass"></label>
+    			</div>
+
+    			<div class="control-group">
+    				<label for="Average Monthly Hours">Average Monthly Hours:</label>
+    				<input type="number" required class="login-field" value="" placeholder="Average Monthly Hours" name="amh" id = "amh">
+    				<label class="login-field-icon fui-lock" for="login-pass"></label>
+    			</div>
+
+    			<div class="control-group">
+    				<label for="Time-spent">Time spent in the company:</label>
+    				<input class="box" type="number"required class="form-control" placeholder="Time spent in the company" name="Last_Evaluation" id = "tsp">
+    				<label class="login-field-icon fui-lock" for="login-pass"></label>
+    			</div>
+
+    			<div class="control-group">
+    				<label for="Work_Accident">Had Work Accident?:</label>
+    				<!-- <input type="number" required class="login-field" value="" placeholder="Work Accident" name="wa" id = "wa"> -->
+                    <select class="login-field" id = "wa">
+                        <option value=0>No</option>
+                        <option value=1>Yes</option>
+                    </select>
+    				<label class="login-field-icon fui-lock" for="login-pass"></label>
+    			</div>
+
+    			<div class="control-group">
+    				<label for="Promotion_count">Promotion in the last 5 years:</label>
+    				<input type="number" required class="login-field" value="" placeholder="Promtion in the last 5 years" name="pc" id = "pc">
+    				<label class="login-field-icon fui-lock" for="login-pass"></label>
+    			</div>
+
+    			<div class="control-group">
+    				<label for="Department">Department:</label>
+    				<select class="login-field" id = "dept">
+    					<option value="product_mng">Product Management</option>
+    					<option value="marketing">Marketing</option>
+    					<option value="technical">Technical</option>
+    					<option value="sales">Sales</option>
+    					<option value="hr">Human Resources</option>
+    					<option value="IT">Information Technology</option>
+    					<option value="accounting">Accounting</option>
+    					<option value="management">Management</option>
+    					<option value="support">Support</option>
+    					<option value="RandD">Other</option>
+    				</select>
+    				<label class="login-field-icon fui-lock" for="login-pass"></label>
+    			</div>
+
+    			<div class="control-group">
+    				<label for="Salary">Select Salary range:</label> 
+    				<select class="login-field" id = "salary">
+    					<option value="low">Low</option>
+    					<option value="medium">Medium</option>
+    					<option value="high">High</option>
+    				</select>
+    				<label class="login-field-icon fui-lock" ></label>
+				</div>
+
+				<input type="submit" value="Submit" class="btn btn-primary btn-large btn-block" onclick="getLabel()">
+				<br>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

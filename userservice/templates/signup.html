@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hr service signup</title>
+<link rel="stylesheet" href="../static/style/signup.css">
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../static/js/common.js"></script>
+	<div class="error-messages"></div>
+	<div class="login">
+		<div class="login-screen">
+			<div class="app-title">
+				<h1>Signup</h1>
+			</div>
+			<div class="login-form">
+				<div class="control-group">
+					<input type="text" class="login-field" value="" placeholder="Firstname" name="firstname" id = "firstname">
+					<label class="login-field-icon fui-user" for="login-fname"></label>
+				</div>
+
+				<div class="control-group">
+					<input type="text" class="login-field" value="" placeholder="Lastname" name="lastname" id = "lastname">
+					<label class="login-field-icon fui-lock" for="login-lname"></label>
+				</div>
+				
+				<div class="control-group">
+					<input type="text" class="login-field" value="" placeholder="Username" name="username" id = "username">
+					<label class="login-field-icon fui-lock" for="login-uname"></label>
+				</div>
+				
+				<div class="control-group">
+					<input type="password" class="login-field" value="" placeholder="Password" name="password" id = "password">
+					<label class="login-field-icon fui-lock" for="login-passwd"></label>
+				</div>
+				<input type="submit" value="Sign up" class="btn btn-primary btn-large btn-block" onclick="signup()">
+				<br>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

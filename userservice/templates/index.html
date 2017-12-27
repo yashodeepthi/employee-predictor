@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="../static/style/index.css">
+<title>Hr service login</title>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <h1 align="center">HR Prediction </h1> 
+    <div class="error-messages"></div>
+    <div class="login">
+        <div class="login-screen">
+            <div class="app-title">
+                <h1>Login</h1>
+            </div>
+            <div class="login-form">
+                <div class="control-group">
+                    <input type="text" class="login-field" value="" placeholder="email" name="username" id = "username">
+                    <label class="login-field-icon fui-user" for="login-name"></label>
+                </div>
+                <div class="control-group">
+                    <input type="password" class="login-field" value="" placeholder="password" name="password" id = "password" onkeypress="captureEnter(event)">
+                    <label class="login-field-icon fui-lock" for="login-pass"></label>
+                </div>
+                <input type="submit" value="Log in" class="btn btn-primary btn-large btn-block" onclick="login()">
+                <div id="submit"> <a href="#" onclick="routeToSignupPage(); return false;">Sign up</a></div>
+                <br>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
